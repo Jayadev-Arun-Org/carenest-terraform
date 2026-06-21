@@ -1,0 +1,12 @@
+project_name        = "jd-carenest-new"
+environment         = "prod"
+location            = "Switzerland North"
+owner               = "JayadevArun"
+kubernetes_version  = "1.35.5"
+system_node_vm_size = "Standard_D4s_v3"
+app_node_vm_size    = "Standard_D4s_v3"
+app_node_min_count  = 3
+app_node_max_count  = 10
+cosmos_throughput   = 1000
+acr_sku             = "Premium"
+ops_email           = "jayadevarun03@gmail.com"
