@@ -26,6 +26,10 @@ jobs:
         run: terraform init
         working-directory: ./carenest-infrastructure
 
+      - name: Terraform Validate
+        run: terraform validate
+        working-directory: ./carenest-infrastructure
+
       - name: Terraform Plan
         run: terraform plan -var-file="dev.tfvars" -out=tfplan
         working-directory: ./carenest-infrastructure
